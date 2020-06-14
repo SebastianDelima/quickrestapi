@@ -14,7 +14,15 @@ function displayHarryPotter(data){
     img.setAttribute('src', data[0].image)
     img.setAttribute('alt', "image")
     img.setAttribute("id", "image")
-    body.appendChild(img)
+    card.setAttribute("id", "card")
+    name.setAttribute("id", "name")
+
+    name.innerText = data[0].name
+
+    card.appendChild(name)
+    card.appendChild(img)
+    body.appendChild(card)
  
 }
+
 
